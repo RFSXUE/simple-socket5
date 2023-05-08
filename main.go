@@ -8,12 +8,12 @@ import (
 
 func main() {
     // 监听 1080 端口
-    listener, err := net.Listen("tcp", "0.0.0.0:8080")
+    listener, err := net.Listen("tcp", "0.0.0.0:1080")
     if err != nil {
         fmt.Println("Error listening:", err.Error())
         os.Exit(1)
     }
-    fmt.Println("Listening on 0.0.0.0:8080 ...")
+    fmt.Println("Listening on 0.0.0.0:1080 ...")
     defer listener.Close()
 
     // 处理连接请求
